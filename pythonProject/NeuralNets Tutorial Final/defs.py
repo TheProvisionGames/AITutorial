@@ -41,3 +41,9 @@ MAX_Y_DIFF = DISPLAY_H - PIPE_MIN - PIPE_GAP_SIZE/2 #Distance with Highest point
 MIN_Y_DIFF = PIPE_GAP_SIZE/2 - PIPE_MAX #Distance with Lowest point for the bird, highest for the pipe
 Y_SHIFT = abs(MIN_Y_DIFF) #Absolute value of Min Y, which makes the distance
 NORMALIZER = abs(MIN_Y_DIFF) + MAX_Y_DIFF #Maximum shift in distance
+
+MUTATION_WEIGHT_MODIFY_CHANCE = 0.2
+MUTATION_ARRAY_MIX_PERC = 0.5
+MUTATION_CUT_OFF = 0.4
+MUTATION_BAD_TO_KEEP = 0.2
+MUTATION_MODIFY_CHANCE_LIMIT = 0.4

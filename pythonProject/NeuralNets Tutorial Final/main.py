@@ -63,7 +63,7 @@ def run_game():  # This plays when you start up main.py
         if num_alive == 0:  # every time the bird dies, create new game, but increase iterations
             pipes.create_new_set()
             game_time = 0
-            birds.create_new_generation()
+            birds.evolve_population()
             num_iterations += 1
 
         update_data_labels(gameDisplay, dt, game_time, num_iterations, num_alive, label_font)  # While running, update the text
